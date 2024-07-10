@@ -22,7 +22,7 @@ const Intro = (props: any) => {
         <div>
           <p>{type},</p>
           <p>{width} x {height} px,</p>
-          <p className="break-all"><a className={type === 'mobile' ? "hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} href={`https://hq.decent.xyz/${props.nft.chainId}/${contractType(props.nft.type)}/${props.nft.address}`} target="_blank">{props.loading ? "..." : props.nft.chainId+"."+props.nft.type+"."+formatAddress(props.nft.address)},</a></p>
+          <p className="break-all"><a className={type === 'mobile' ? "hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} href={`https://www.decentscan.xyz/?chainId=8453&txHash=0x330e61b42cc55c3ce8fcc65bc5ea95d1fe28e2b62d04516aec5a04e2e77be7ea`} target="_blank">{props.loading ? "..." : 8453+"."+formatAddress('0x330e61b42cc55c3ce8fcc65bc5ea95d1fe28e2b62d04516aec5a04e2e77be7ea')},</a></p>
           <p><a className={type === 'mobile' ? "hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} href={`https://etherscan.io/block/${props.block}`} target="_blank">{props.block} {maybeMorning} {`{revalidate: 12}`},</a></p>
           <p>New York, NY</p>
         </div>

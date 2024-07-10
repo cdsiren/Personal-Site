@@ -1,3 +1,5 @@
+import { PortableTextBlock } from "sanity";
+
 export interface ScreenSizeContext {
   width: number;
   height: number;
@@ -18,7 +20,7 @@ export interface SanityPost {
     _ref: string,
     _type: string
   },
-  body: Array<Object>,
+  body: PortableTextBlock[],
   categories: SanityCategory[],
   mainImage: {
     _type: string,
