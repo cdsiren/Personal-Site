@@ -1,4 +1,4 @@
-const ReadingList = [
+const readings = [
   {
     title: "Introducing Curation Markets",
     date: "2017",
@@ -73,4 +73,4 @@ const ReadingList = [
   },
 ]
 
-export default ReadingList;
+export default readings

@@ -1,50 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
 
-html,
 body {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 100; /* thin */
-  font-weight: 200; /* extralight */
-  font-weight: 300; /* light */
-  font-weight: 400; /* regular */
-  font-weight: 500; /* medium */
+  font-weight: 500;
 }
 
-::-moz-selection { background-color: #000000; 
-  color: #ffffff; } 
-  ::selection { background-color: #000000; 
-  color: #ffffff; }
-
-  @media (max-width: 785px) {
-    ::selection {
-      background-color: white;
-      color: black;
-    }
-  }
-
-  .accordion {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .accordion-item {
-    margin-bottom: 10px;
-  }
-
-textarea:focus, input:focus{
-  outline: none;
+::selection {
+  background-color: black;
+  color: white;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media (max-width: 785px) {
+  ::selection {
+    background-color: white;
+    color: black;
+  }
 }
 
-.centered {
-  display: flex;
-  align-items: center;
+.markdown {
+  @apply leading-relaxed;
+}
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote,
+.markdown img {
+  @apply my-6;
+}
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+.markdown h3,
+.markdown h4 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+.markdown ul {
+  @apply list-disc pl-6;
+}
+.markdown ol {
+  @apply list-decimal pl-6;
+}
+.markdown li {
+  @apply my-2;
+}
+.markdown li p {
+  @apply my-2;
+}
+.markdown a {
+  @apply underline hover:bg-black hover:text-white;
+}
+.markdown strong {
+  @apply font-[500];
+}
+.markdown img {
+  @apply mx-auto;
 }
