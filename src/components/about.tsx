@@ -22,10 +22,10 @@ export default function About() {
       <p className="md:w-1/2">In a prior life I played professional lacrosse and won a world championship with the Cannons in 2020.</p>
       <p className="md:w-1/2 py-4">Find me on {link('https://twitter.com/cdsiren', 'Twitter')}, {link('https://www.linkedin.com/in/charlie-durbin-b88544131/', 'LinkedIn')}, and {link('https://github.com/cdsiren', 'GitHub')}.</p>
 
-      <h2 className="font-[500] pt-12 pb-4">Press</h2>
+      <h2 className="font-medium pt-12 pb-4">Press</h2>
       {press.map(p => (
         <a key={p.href} href={p.href} target="_blank" rel="noreferrer" className="block md:w-1/2 py-2 hover:text-orange-400">
-          <span className="font-[500]">{p.outlet}</span> · {p.title} <span className="whitespace-nowrap">({p.date})</span>
+          <span className="font-medium">{p.outlet}</span> · {p.title} <span className="whitespace-nowrap">({p.date})</span>
         </a>
       ))}
     </div>

@@ -3,7 +3,7 @@ import readings from '../utils/reading-list'
 export default function ReadingList() {
   return (
     <div className="p-8 w-full min-h-[83vh]">
-      <div className="md:grid hidden grid-cols-6 font-light pb-4 font-[500]">
+      <div className="md:grid hidden grid-cols-6 font-light pb-4 font-medium">
         <p>N°</p>
         <p className="col-span-2">Title</p>
         <p>Author</p>

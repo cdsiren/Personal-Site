@@ -5,7 +5,7 @@ import type { Post } from '../lib/posts'
 export default function BlogPosts({ posts }: { posts: Post[] }) {
   return (
     <div className="p-8 w-full min-h-[83vh]">
-      <div className="md:grid hidden grid-cols-6 font-light pb-4 font-[500]">
+      <div className="md:grid hidden grid-cols-6 font-light pb-4 font-medium">
         <p>N°</p>
         <p className="col-span-2">Project</p>
         <p>Type</p>

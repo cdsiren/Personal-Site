@@ -1,6 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 440px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 900px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1736px;
+  --breakpoint-3xl: 2800px;
+}
+
+@custom-variant m (@media (max-width: 785px));
 
 body {
   font-weight: 500;
@@ -51,7 +62,7 @@ body {
   @apply underline hover:bg-black hover:text-white;
 }
 .markdown strong {
-  @apply font-[500];
+  @apply font-medium;
 }
 .markdown img {
   @apply mx-auto;
